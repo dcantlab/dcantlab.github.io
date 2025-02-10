@@ -24,7 +24,7 @@
           ctx.fillStyle = 'rgb(128, 128, 128)';
           ctx.fillRect(0, 0, c.width, c.height);
           ctx.fillStyle = 'rgb(0, 0, 0)';
-          ctx.fillRect(c.width / 2 - 3, c.height / 2 - 3, 6, 6);
+          ctx.fillRect(c.width / 2 - 4, c.height / 2 - 4, 8, 8);
         };
         const fig3Ready = (c) => {
           fig3Base(c);
@@ -43,19 +43,20 @@
           fig3Base(c);
           let ctx = c.getContext('2d');
           ctx.fillStyle = 'rgb(0, 0, 0)';
-          let r = [[5, 5, 5, 5, 6, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10].shuffle(),
-                   [5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 9, 10, 10, 10, 10].shuffle()];
+          ctx.lineWidth = 1.5;
+          let r = [[6, 6, 6, 6, 7, 7, 7, 7, 8, 9, 10, 11, 11, 12, 12].shuffle(),
+                   [6, 6, 7, 7, 8, 9, 10, 11, 11, 11, 11, 12, 12, 12, 12].shuffle()];
           if (leftWasLarger) r = r.reverse();
           for (let i = 0; i < 2; i++) {
-            let cx = c.width / 2 + (i - 0.5) * 200;
+            let cx = c.width / 2 + (i - 0.5) * 224;
             let cy = c.height / 2;
             for (let j = 0; j < 15; j++) {
               let col = Math.floor(j / 5);
-              let x = cx + (col - 1) * 40;
-              let y = cy + ((j - col * 5) - 2) * 40;
+              let x = cx + (col - 1) * 48;
+              let y = cy + ((j - col * 5) - 2) * 48;
               ctx.beginPath();
-              ctx.arc(x + (Math.random() * 10 - 5), 
-                      y + (Math.random() * 10 - 5), 
+              ctx.arc(x + (Math.random() * 12 - 6),
+                      y + (Math.random() * 12 - 6),
                       r[i][j], 0, 2 * Math.PI);
               ctx.stroke();
             }
@@ -184,7 +185,7 @@
           <video class="w-full" controls loop>
             <source src="images/cWWI-10Hz.mp4" type="video/mp4">
           </video>
-          <figcaption><span class="font-bold">Fig. 1.</span> The continuous Wagon Wheel Illusion.
+          <figcaption class="mt-2"><span class="font-bold">Fig. 1.</span> The continuous Wagon Wheel Illusion.
             Play the movie, fixate on the white square at the center, and observe the rotation of the patterns on both sides of the vertical gray bar.</figcaption>
         </figure>
         <p class="mt-2 mb-4">A compelling visual demonstration of the discrete nature of perceptual experience can be observed in the continuous Wagon Wheel Illusion (Fig. 1; <a class="underline underline-offset-2 text-blue-600" href="https://doi.org/10.1016/j.visres.2006.07.030" target="_blank">VanRullen, 2006</a>).
@@ -197,7 +198,7 @@
           In such cases, the observer perceives only one image at a time, with perception stochastically alternating between the two images.</p>
         <figure class="w-full max-w-96 lg:float-left mx-auto lg:mr-6 my-4">
           <img class="w-full" src="images/BR-face-house.png">
-          <figcaption><span class="font-bold">Fig. 2.</span> Binocular rivalry between face and house images.
+          <figcaption class="mt-2"><span class="font-bold">Fig. 2.</span> Binocular rivalry between face and house images.
             View this image with red-cyan anaglyph glasses.</figcaption>
         </figure>
         <p class="mt-2 mb-4">By asking the observer to continuously report their perception during binocular rivalry, visual awareness can be probed.
@@ -220,15 +221,16 @@
         <p class="my-2">Perceptual experience often feels far richer than the brain can feasibly process at any given moment.
           Imagine scanning a room full of people and trying to gauge whether they are enjoying the scene.
           Surprisingly, this task does not feel overwhelming or impossible.</p>
-        <figure class="w-full max-w-96 lg:float-left mx-auto lg:mr-6 my-4">
-          <canvas class="w-full aspect-[4/3]" id="fig3-canvas" width="384" height="288"></canvas>
-          <figcaption><span class="font-bold">Fig. 3.</span> Demonstration of ensemble perception.
-            <button class="px-1 rounded-md bg-white hover:bg-neutral-100 border border-neutral-400 shadow" id="fig3-button">Click&nbsp;here</button> and fixate on the black square at the center; the arrays will flash briefly.</figcaption>
+        <figure class="w-full max-w-[28rem] lg:float-left mx-auto lg:mr-6 my-4">
+          <canvas class="w-full aspect-[4/3]" id="fig3-canvas" width="448" height="336"></canvas>
+          <figcaption class="mt-2"><span class="font-bold">Fig. 3.</span> Demonstration of ensemble perception.
+            <button class="px-1 rounded-md bg-white hover:bg-neutral-100 border border-neutral-400 shadow" id="fig3-button">Click&nbsp;here</button> and fixate on the black square at the center.
+            Click again to start a new trial.</figcaption>
         </figure>
         <p class="my-2">This seemingly effortless task requires extracting statistical properties from a large group of stimuli (e.g., extrating the mean emotion from a crowd of faces).
           Researchers suggest that we possess an ability to efficiently summarize large amounts of visual information into meaningful patterns or properties, referred to as ensemble perception (for review, see <a class="underline underline-offset-2 text-blue-600" href="https://doi.org/10.1146/annurev-psych-010416-044232" target="_blank">Whitney &amp; Yamanashi Leib, 2018</a>).
-          Ensemble perception operates across a wide range of visual features, from simple ones like mean size to complex ones such as mean emotion.
-          For a quick demonstration, play the interactive Figure 3, wait for the two arrays of circles to appear on the left and right, and determine which array has larger circles on average.</p>
+          For a quick demonstration, play the interactive Figure 3, wait for the two arrays of circles to flash briefly on the left and right, and silently decide which array has the larger average size.
+          You might expect this to be a very difficult task, but you will likely find yourself agreeing with the correct response when it appears after the arrays.</p>
         <p class="mt-2 mb-4">At DCANT Lab, we investigate whether ensemble perception relies on shared mechanisms and how it differs from object perception (e.g., <a class="underline underline-offset-2 text-blue-600" href="https://doi.org/10.3758/s13423-021-01982-1" target="_blank">Cha, Blake, &amp; Gauthier, 2022</a>; <a class="underline underline-offset-2 text-blue-600" href="https://doi.org/10.1037/xge0001582" target="_blank">Chang, Cha, &amp; Gauthier, 2024</a>).
           By studying how the brain processes large groups of stimuli, we seek to understand the mechanisms that allow visual awareness to operate seamlessly, even within the constraints of visual processing.</p>
         <div class="clear-both"></div>
