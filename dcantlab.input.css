@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sofia-sans-condensed: "Sofia Sans Condensed", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer components {
+  ::-webkit-details-marker {
+    display: none;
+  }
+  .nav-l1 {
+    @apply block px-4 py-1 rounded-lg;
+  }
+  .nav-l1x {
+    @apply inline-flex items-center px-3 py-1 rounded-lg list-none;
+  }
+  .nav-l2 {
+    @apply block px-3 py-1;
+  }
+  .alt-nav-l1 {
+    @apply block px-3 py-1 rounded-xs;
+  }
+  .alt-nav-l1x {
+    @apply inline-flex items-center px-2 py-1;
+  }
+  .alt-nav-l2 {
+    @apply block pl-5 pr-3 py-1 rounded-xs;
+  }
+  .underline-blue-600 {
+    @apply underline underline-offset-2 text-blue-600;
+  }
+  .hanging-16 {
+    @apply pl-16 -indent-16;
+  }
+  .badge-plain {
+    @apply text-neutral-500 text-sm;
+  }
+  h2>.badge-plain {
+    @apply text-base font-normal;
+  }
+  .badge-neutral-200 {
+    @apply px-2 py-1 rounded-xl bg-neutral-200 text-sm;
+  }
+  .badge-button {
+    @apply px-1 rounded-md bg-white border border-neutral-400 shadow-sm;
+  }
+}

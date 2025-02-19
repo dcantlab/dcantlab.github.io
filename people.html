@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People &mdash; DCANT Lab</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="dcantlab.tailwind-v4.0.css">
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="hidden md:block p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <img class="flex-none w-[7.5rem] h-12 mr-2" src="images/dcantlab-dark.svg" alt="DCANT Lab">
+        <nav class="flex-1 flex items-center justify-center">
+          <ul class="flex gap-2">
+            <li><a class="nav-l1 hover:bg-neutral-700" href="index.html">Home</a></li>
+            <li><span class="nav-l1 bg-neutral-800">People</span></li>
+            <li>
+              <details class="open:[&_summary]:bg-neutral-700">
+                <summary class="nav-l1x hover:bg-neutral-700">
+                  <span class="mx-1">Research</span>
+                  <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                  </svg>
+                </summary>
+                <!-- start research dropdown -->
+                <ul class="absolute z-50 mt-1 list-none rounded-md border-2 border-neutral-300 shadow-lg bg-white text-black">
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/journal-articles.html">Journal&nbsp;Articles</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/research-topics.html">Research&nbsp;Topics</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/datasets-codes.html">Datasets/Codes</a></li>
+                </ul>
+                <!-- end research dropdown -->
+              </details>
+            </li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="shrink w-[7.5rem] ml-2"></div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start alt. header start -->
+    <div class="block md:hidden p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <nav class="flex-none flex items-center w-8 mr-2">
+          <details class="open:[&_summary]:bg-neutral-700">
+            <summary class="flex items-center justify-center w-8 h-8 list-none rounded-md hover:bg-neutral-700">
+              <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </summary>
+            <!-- start hamburger menu -->
+            <div class="absolute z-50 left-0 w-full mt-4 p-2 shadow-lg bg-neutral-900">
+              <div class="container xl:max-w-7xl grid grid-cols-2 gap-2 mx-auto">
+                <ul class="list-none">
+                  <li><a class="alt-nav-l1 hover:bg-neutral-700" href="index.html">Home</a></li>
+                  <li class="pb-1"><span class="alt-nav-l1 bg-neutral-800">People</span></li>
+                  <li class="pt-1 border-t border-neutral-700"><a class="alt-nav-l1 hover:bg-neutral-700" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="flex flex-col">
+                  <div class="alt-nav-l1x">
+                    <span class="mx-1">Research</span>
+                    <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                    </svg>
+                  </div>
+                  <ul class="list-none">
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/journal-articles.html">Journal&nbsp;Articles</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/research-topics.html">Research&nbsp;Topics</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/datasets-codes.html">Datasets/Codes</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end hamburger menu -->
+          </details>
+        </nav>
+        <div class="flex-1 flex items-center justify-center">
+          <img class="w-[7.5rem] h-12" src="images/dcantlab-dark.svg" alt="DCANT Lab">
+        </div>
+        <div class="shrink w-8 ml-2"></div>
+      </div>
+    </div>
+    <!-- end alt. header -->
+
+    <!-- start contents section -->
+    <div class="p-2">
+      <div class="container xl:max-w-7xl mx-auto">
+        <!-- start PI section -->
+        <h1 class="inline-flex items-start my-2">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">Principal Investigator</span>
+        </h1>
+        <div class="flex gap-4 mt-2 mb-4">
+          <div class="flex-none w-32 lg:w-48">
+            <img class="w-full my-4 rounded-full" src="images/people/OakyoonCha.jpg">
+          </div>
+          <div>
+            <h2 class="my-2 text-xl font-bold">Oakyoon Cha</h2>
+            <p class="my-2">I received my BA in Psychology and MS and PhD in Cognitive Science, all from Yonsei University.
+              Following this, I completed a postdoctoral fellowship at Vanderbilt University and began my academic career as an Assistant Professor in the Department of Psychology at Sungshin Women&apos;s University (SSWU).</p>
+            <p class="my-2">After four years of mentoring talented young scientists at SSWU, I moved to Sogang University and launched DCANT Lab.
+              My research at DCANT Lab investigates perceptual rhythms, visual awareness, and their interactions in creating a seamless and uninterrupted sense of the visual world.</p>
+            <p class="my-2">For more information &mdash; 
+              <a class="underline-blue-600" href="https://scholar.google.com/citations?user=JcTavHMAAAAJ" target="_blank">Google Scholar</a>,
+              <a class="underline-blue-600" href="https://neurotree.org/neurotree/tree.php?pid=732605" target="_blank">NeuroTree</a>
+            </p>
+          </div>
+        </div>
+        <hr class="h-0.5 my-2 rounded-xs bg-neutral-300 border-0">
+        <!-- end PI section -->
+
+        <!-- start members section -->
+        <h1 class="inline-flex items-start my-2">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157v.003Z" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">Current Members</span>
+        </h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2 mb-4">
+          <!-- Suyeon Kim -->
+          <div class="flex gap-4">
+            <div class="flex-none w-32">
+              <img class="w-full my-4 rounded-full" src="images/people/SuyeonKim.jpg">
+            </div>
+            <div>
+              <h2 class="my-2 text-xl font-bold">Suyeon Kim<span class="ml-4 badge-plain">PhD student, 2024&ndash;present</span></h2>
+              <p class="my-2">Suyeon received her BA and MA in Psychology from SSWU and is continuing her work at DCANT Lab.
+                Her research investigates how the visual system distributes attention to handle complex demands from multiple tasks&mdash;for instance, focusing on a specific person while simultaneously reading the room.</p>
+            </div>
+          </div>
+          <!-- Hyerim Kim -->
+          <div class="flex gap-4">
+            <div class="flex-none w-32">
+              <img class="w-full my-4 rounded-full" src="images/people/HyerimKim.jpg">
+            </div>
+            <div>
+              <h2 class="my-2 text-xl font-bold">Hyerim Kim<span class="ml-4 badge-plain">MA student, 2024&ndash;present</span></h2>
+              <p class="my-2">Hyerim received her BA in Psychology from SSWU and began her own research at DCANT Lab.
+                She is interested in the <a class="underline-blue-600" href="https://youtu.be/-KhPYdge9RU" target="_blank">motion silencing illusion</a> (<a class="underline-blue-600" href="https://doi.org/10.1016/j.cub.2010.12.019" target="_blank">Suchow &amp; Alvarez, 2011</a>) and the visual features that could enhance or reduce this phenomenon.</p>
+            </div>
+          </div>
+          <!-- Nayoung Kim -->
+          <div class="flex gap-4">
+            <div class="flex-none my-4 w-32">
+              <img class="w-full rounded-full" src="images/people/NayoungKim.jpg">
+            </div>
+            <div>
+              <h2 class="my-2 text-xl font-bold">Nayoung Kim<span class="ml-4 badge-plain">MA student, 2024&ndash;present</span></h2>
+              <p class="my-2">Nayoung earned her BA in Psychology at SSWU before starting her research at DCANT Lab.
+                Her research focuses on how relationships among objects are processed to construct a visual scene.
+                She uses the dichoptic presentation technique to investigate the role of subcortical processing during scene understanding.</p>
+            </div>
+          </div>
+        </div>
+        <hr class="h-0.5 my-2 rounded-xs bg-neutral-300 border-0">
+        <!-- end members section -->
+
+        <!-- start former members section -->
+        <h1 class="inline-flex items-start my-2">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
+            <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
+            <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">Alumni and Former Members</span>
+        </h1>
+        <h2 class="my-2 text-xl font-bold">Alumni
+          <span class="inline-flex items-center mx-0.5 badge-plain">
+            <svg class="size-4 mx-px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd" />
+            </svg>
+            <span>Sungshin&nbsp;Women&apos;s&nbsp;University</span>
+          </span>
+        </h2>
+        <div class="md:columns-2 mt-2 mb-4">
+          <ul>
+            <li>Jumi Lee<span class="ml-4 badge-plain">MA, Feb. 2024</span></li>
+            <li>Soo&nbsp;Jin Kim<span class="ml-4 badge-plain">MA, Feb. 2024</span></li>
+            <li>Suyeon Kim<span class="ml-4 badge-plain">MA, Feb. 2024</span></li>
+          </ul>
+        </div>
+
+        <h2 class="my-2 text-xl font-bold">Former RAs
+          <span class="inline-flex items-center mx-0.5 badge-plain">
+            <svg class="size-4 mx-px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd" />
+            </svg>
+            <span>Sungshin&nbsp;Women&apos;s&nbsp;University</span>
+          </span>
+        </h2>
+        <div class="md:columns-2 mt-2 mb-4">
+          <ul>
+            <!-- Fall 2024 -->
+            <li class="break-after-avoid">Su&nbsp;Hyeong Ju<span class="ml-4 badge-plain">Fall 2024</span></li>
+            <li class="break-after-avoid">Jeong&nbsp;U Kim<span class="ml-4 badge-plain">Fall 2024</span></li>
+            <li class="break-after-avoid">Su&nbsp;Youn Lee<span class="ml-4 badge-plain">Fall 2024</span></li>
+            <li class="mb-2">Heeho Shin<span class="ml-4 badge-plain">Fall 2024</span></li>
+            <!-- Spring 2024 -->
+            <li class="break-after-avoid">Jungyoun Jung<span class="ml-4 badge-plain">Spring 2024</span></li>
+            <li class="break-after-avoid">Ki&nbsp;Ryung Kim<span class="ml-4 badge-plain">Spring 2024</span></li>
+            <li class="break-after-avoid">Shinyoung Kim<span class="ml-4 badge-plain">Spring 2024</span></li>
+            <li class="mb-2">Sunyoung Park<span class="ml-4 badge-plain">Spring 2024</span></li>
+            <!-- Fall 2023 -->
+            <li class="break-after-avoid">Minju Jo<span class="ml-4 badge-plain">Fall 2023</span></li>
+            <li class="break-after-avoid">Jihyeon Kim<span class="ml-4 badge-plain">Fall 2023</span></li>
+            <li class="mb-2">Minyeong Lee<span class="ml-4 badge-plain">Fall 2023</span></li>
+            <!-- Spring 2023 -->
+            <li class="break-after-avoid">Hyerim Kim<span class="ml-4 badge-plain">Spring&ndash;Fall 2023</span></li>
+            <li class="break-after-avoid">Nayoung Kim<span class="ml-4 badge-plain">Spring&ndash;Fall 2023</span></li>
+            <li class="mb-2">Hyunu Kim<span class="ml-4 badge-plain">Spring 2023</span></li>
+            <!-- Fall 2022 -->
+            <li class="break-after-avoid">Si&nbsp;Yeon Joo<span class="ml-4 badge-plain">Fall 2022</span></li>
+            <li class="break-after-avoid">Sangji Lee<span class="ml-4 badge-plain">Fall 2022</span></li>
+            <li>Seulgi &lsquo;Celina&rsquo; Lee<span class="ml-4 badge-plain">Fall 2022</span></li>
+          </ul>
+        </div>
+        <!-- end former members section -->
+      </div>
+    </div>
+    <!-- end contents section -->
+  </body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posters &amp; Talks &mdash; DCANT Lab</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="../dcantlab.tailwind-v4.0.css">
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="hidden md:block p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <img class="flex-none w-[7.5rem] h-12 mr-2" src="../images/dcantlab-dark.svg" alt="DCANT Lab">
+        <nav class="flex-1 flex items-center justify-center">
+          <ul class="flex gap-2">
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../index.html">Home</a></li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../people.html">People</a></li>
+            <li>
+              <details class="open:[&_summary]:bg-neutral-700">
+                <summary class="nav-l1x hover:bg-neutral-700">
+                  <span class="mx-1">Research</span>
+                  <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                  </svg>
+                </summary>
+                <!-- start research dropdown -->
+                <ul class="absolute z-50 mt-1 list-none rounded-md border-2 border-neutral-300 shadow-lg bg-white text-black">
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="journal-articles.html">Journal&nbsp;Articles</a></li>
+                  <li><span class="nav-l2 bg-neutral-100">Posters&nbsp;&amp;&nbsp;Talks</span></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research-topics.html">Research&nbsp;Topics</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="datasets-codes.html">Datasets/Codes</a></li>
+                </ul>
+                <!-- end research dropdown -->
+              </details>
+            </li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="shrink w-[7.5rem] ml-2"></div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start alt. header -->
+    <div class="block md:hidden p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <nav class="flex-none flex items-center w-8 mr-2">
+          <details class="open:[&_summary]:bg-neutral-700">
+            <summary class="flex items-center justify-center w-8 h-8 list-none rounded-md hover:bg-neutral-700">
+              <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </summary>
+            <!-- start hamburger menu -->
+            <div class="absolute z-50 left-0 w-full mt-4 p-2 shadow-lg bg-neutral-900">
+              <div class="container xl:max-w-7xl grid grid-cols-2 gap-2 mx-auto">
+                <ul class="list-none">
+                  <li><a class="alt-nav-l1 hover:bg-neutral-700" href="../index.html">Home</a></li>
+                  <li class="pb-1"><a class="alt-nav-l1 hover:bg-neutral-700" href="../people.html">People</a></li>
+                  <li class="pt-1 border-t border-neutral-700"><a class="alt-nav-l1 hover:bg-neutral-700" href="../contact.html">Contact</a></li>
+                </ul>
+                <div class="flex flex-col">
+                  <div class="alt-nav-l1x">
+                    <span class="mx-1">Research</span>
+                    <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                    </svg>
+                  </div>
+                  <ul class="list-none">
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="journal-articles.html">Journal&nbsp;Articles</a></li>
+                    <li><span class="alt-nav-l2 bg-neutral-800">Posters&nbsp;&amp;&nbsp;Talks</span></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research-topics.html">Research&nbsp;Topics</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="datasets-codes.html">Datasets/Codes</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end hamburger menu -->
+          </details>
+        </nav>
+        <div class="flex-1 flex items-center justify-center">
+          <img class="w-[7.5rem] h-12" src="../images/dcantlab-dark.svg" alt="DCANT Lab">
+        </div>
+        <div class="shrink w-8 ml-2"></div>
+      </div>
+    </div>
+    <!-- end alt. header -->
+
+    <!-- start contents section -->
+    <div class="p-2">
+      <div class="container xl:max-w-7xl mx-auto">
+        <!-- start presentations section -->
+        <h1 class="inline-flex items-start my-2">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.04 16.5.5-1.5h6.42l.5 1.5H8.29Zm7.46-12a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0v-6Zm-3 2.25a.75.75 0 0 0-1.5 0v3.75a.75.75 0 0 0 1.5 0V9Zm-3 2.25a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5Z" clip-rule="evenodd" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">Conference Presentations By Year</span>
+        </h1>
+        <h2 class="my-2 text-xl font-bold">2025</h2>
+        <ul class="mt-2 mb-4 list-none">
+          <li class="my-1 hanging-16">김나영, 차옥균. (2025, 2월 12&ndash;14일). <span class="font-bold">장면 내 관계적 표상 처리의 신피질 의존성</span> [포스터 발표]. 한국 인지 및 생물 심리학회, 광주, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/KimN-Cha_KSCBP2025.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">김수연, 차옥균. (2025, 2월 12&ndash;14일). <span class="font-bold">과제와 무관한 변산은 어떻게 앙상블 판단에 영향을 주는가</span> [구두 발표]. 한국 인지 및 생물 심리학회, 광주, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/KimS-Cha_KSCBP2025.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">차옥균. (2025, 2월 12&ndash;14일). <span class="font-bold">시의식의 샘플링 레이트</span> [심포지움]. 한국 인지 및 생물 심리학회, 광주, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/Cha_KSCBP2025.pdf" target="_blank">abstract</a></li>
+        </ul>
+
+        <h2 class="my-2 text-xl font-bold">2021&ndash;2024
+          <span class="inline-flex items-center mx-0.5 badge-plain">
+            <svg class="size-4 mx-px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd" />
+            </svg>
+            <span>Sungshin&nbsp;Women&apos;s&nbsp;University</span>
+          </span>
+        </h2>
+        <ul class="mt-2 mb-4 list-none">
+          <li class="my-1 hanging-16">Cha, O. (2024, May 17&ndash;22). <span class="italic">Theta- and alpha-band frequency advantages for sensory gating</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.24.10.470" target="_blank">https://doi.org/10.1167/jov.24.10.470</a></li>
+          <li class="my-1 hanging-16">Gauthier, I., Chang, T.-Y., &amp; Cha, O. (2024, May 17&ndash;22). <span class="italic">A general ability for simple and complex ensemble judgments</span> [Oral presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.24.10.329" target="_blank">https://doi.org/10.1167/jov.24.10.329</a></li>
+          <li class="my-1 hanging-16">Kim, H. [Hyerim], Kim, N. [Nayoung], Kim, H. [Hyunu], &amp; Cha, O. (2024, May 17&ndash;22). <span class="italic">Masked-face recognition leads to learning of new perceptual abilities</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.24.10.503" target="_blank">https://doi.org/10.1167/jov.24.10.503</a></li>
+          <li class="my-1 hanging-16">Kim, S. [Suyeon], &amp; Cha, O. (2024, May 17&ndash;22). <span class="italic">Multiplicative effect of task-irrelevant feature variability on variability judgments</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.24.10.505" target="_blank">https://doi.org/10.1167/jov.24.10.505</a></li>
+          <li class="my-1 hanging-16">김수연, 차옥균. (2024, 2월 1&ndash;3일). <span class="font-bold">변산 판단에서 과제와 무관한 특질 변산의 곱셈적 효과</span> [포스터 발표]. 한국 인지 및 생물 심리학회, 서울, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/Kim-Cha_KSCBP2024.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">김혜림, 김나영, 김현우, 차옥균. (2024, 2월 1&ndash;3일). <span class="font-bold">마스크 착용 얼굴 재인을 위한 새로운 종류의 지각 능력</span> [구두 발표]. 한국 인지 및 생물 심리학회, 서울, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/Kim-Kim-Kim-Cha_KSCBP2024.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">Cha, O. (2023, May 19&ndash;24). <span class="italic">Contribution of a common ability in judgments for the mode of object identities</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.23.9.4741" target="_blank">https://doi.org/10.1167/jov.23.9.4741</a></li>
+          <li class="my-1 hanging-16">Gauthier, I., &amp; Cha, O. (2023, May 19&ndash;24). <span class="italic">Faces are not processed holistically in ensemble judgments</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.23.9.4583" target="_blank">https://doi.org/10.1167/jov.23.9.4583</a></li>
+          <li class="my-1 hanging-16">Kim, S. [Suyeon], &amp; Cha, O. (2023, May 19&ndash;24). <span class="italic">Diversity of items within attentional window explains &ldquo;cost-free&rdquo; diversity judgments</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.23.9.4718" target="_blank">https://doi.org/10.1167/jov.23.9.4718</a></li>
+          <li class="my-1 hanging-16">Kim, S. J., &amp; Cha, O. (2023, May 19&ndash;24). <span class="italic">Face recognition plays a role in ensemble judgments of facial features</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.23.9.5217" target="_blank">https://doi.org/10.1167/jov.23.9.5217</a></li>
+          <li class="my-1 hanging-16">Lee, J. [Jumi], &amp; Cha, O. (2023, May 19&ndash;24). <span class="italic">Multitasking without task switching</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.23.9.5203" target="_blank">https://doi.org/10.1167/jov.23.9.5203</a></li>
+          <li class="my-1 hanging-16">김수연, 차옥균. (2023, 2월 16&ndash;17일). <span class="font-bold">주의 창 내 항목을 이용한 기억 및 다양성 판단 이중과제의 수행</span> [구두 발표]. 한국 인지 및 생물 심리학회, 서울, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/KimS-Cha_KSCBP2023.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">김수진, 차옥균. (2023, 2월 16&ndash;17일). <span class="font-bold">얼굴 앙상블 판단에서 개별 얼굴 지각의 역할</span> [구두 발표]. 한국 인지 및 생물 심리학회, 서울, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/KimSJ-Cha_KSCBP2023.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">이주미, 차옥균. (2023, 2월 16&ndash;17일). <span class="font-bold">과제 간의 전환 없이도 멀티태스킹이 가능할까?</span> [구두 발표]. 한국 인지 및 생물 심리학회, 서울, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/Lee-Cha_KSCBP2023.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">Chang, T.-Y., Cha, O., McGugin, R. W., Tomarken, A. J., &amp; Gauthier, I. (2022, May 12&ndash;18). <span class="italic">A general ability for ensemble perception</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.22.14.4013" target="_blank">https://doi.org/10.1167/jov.22.14.4013</a></li>
+          <li class="my-1 hanging-16">차옥균. (2021, 7월 15&ndash;16일). <span class="font-bold">앙상블 지각을 구성하는 공통 기제와 특질 특정적 기제들</span> [심포지움]. 한국 인지 및 생물 심리학회.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/Cha_KSCBP2021.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">Cha, O., &amp; Blake, R. (2021, May 21&ndash;26). <span class="italic">Extracting evidence for neural rhythms from behavioral measurements</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.21.9.1958" target="_blank">https://doi.org/10.1167/jov.21.9.1958</a></li>
+        </ul>
+
+        <h2 class="my-2 text-xl font-bold">2018&ndash;2020
+          <span class="inline-flex items-center mx-0.5 badge-plain">
+            <svg class="size-4 mx-px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd" />
+            </svg>
+            <span>Vanderbilt&nbsp;University</span>
+          </span>
+        </h2>
+        <ul class="mt-2 mb-4 list-none">
+          <li class="my-1 hanging-16">Cha, O., Blake, R., &amp; Gauthier, I. (2020, June 19&ndash;24). <span class="italic">Judgments of average and variance within object ensembles rely on a common ability</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.20.11.841" target="_blank">https://doi.org/10.1167/jov.20.11.841</a></li>
+          <li class="my-1 hanging-16">Blake, R., Cha, O., Son, G., &amp; Chong, S. C. (2019, May 17&ndash;22). <span class="italic">Novel procedure for generating continuous flash suppression: Seurat meets Mondrian</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/19.10.63c" target="_blank">https://doi.org/10.1167/19.10.63c</a></li>
+          <li class="my-1 hanging-16">Cha, O., Blake, R., &amp; Gauthier, I. (2019, May 17&ndash;22). <span class="italic">Stimulus-specific learning facilitates ensemble processing of cars</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/19.10.32" target="_blank">https://doi.org/10.1167/19.10.32</a></li>
+          <li class="my-1 hanging-16">Cha, O., &amp; Chong, S. C. (2018, May 18&ndash;23). <span class="italic">Ensemble information is built with a bag of free-floating visual features</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/18.10.317" target="_blank">https://doi.org/10.1167/18.10.317</a></li>
+        </ul>
+
+        <h2 class="my-2 text-xl font-bold">2014&ndash;2017
+          <span class="inline-flex items-center mx-0.5 badge-plain">
+            <svg class="size-4 mx-px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd" />
+            </svg>
+            <span>Yonsei&nbsp;University</span>
+          </span>
+        </h2>
+        <ul class="mt-2 mb-4 list-none">
+          <li class="my-1 hanging-16">Cha, O., &amp; Chong, S. C. (2017, August 30&ndash;31). <span class="italic">Ensemble similarity between binocular images promotes binocular matching</span> [Poster presentation]. Korean Society for Brain and Neural Science, Seoul, Korea.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/Cha-Chong_KSBNS2017.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">Cha, O., Blake, R., &amp; Chong, S. C. (2017, May 19&ndash;24). <span class="italic">Dissimilarity between feature ensembles triggers binocular rivalry without competing local features</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/17.10.1221" target="_blank">https://doi.org/10.1167/17.10.1221</a></li>
+          <li class="my-1 hanging-16">차옥균, 정상철. (2017, 1월 19&ndash;20일). <span class="font-bold">개별 방위 확률 분포의 왜도와 정점이 평균 방위 판단이 미치는 영향</span> [포스터 발표]. 한국 인지 및 생물 심리학회, 부산, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/Cha-Chong_KSCBP2017.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">Cha, O., &amp; Chong, S. C. (2016, May 13&ndash;18). <span class="italic">Objects held in visual working memory compete for access to resources</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/16.12.1053" target="_blank">https://doi.org/10.1167/16.12.1053</a></li>
+          <li class="my-1 hanging-16">차옥균, 정상철. (2016, 1월 21&ndash;23일). <span class="font-bold">시각작업기억에 저장된 물체의 선택적 유지에 따른 정밀도 변화</span> [구두 발표]. 한국 인지 및 생물 심리학회, 제주, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/Cha-Chong_KSCBP2016.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">Eo, K. Y., Cha, O., Kang, M.-S., &amp; Chong, S. C. (2015, May 15&ndash;20). <span class="italic">Attending away makes semantic information available during rivalry</span> [Oral presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/15.12.382" target="_blank">https://doi.org/10.1167/15.12.382</a></li>
+          <li class="my-1 hanging-16">Kang, K., Cha, O., &amp; Chong, S. C. (2015, May 15&ndash;20). <span class="italic">Relational information decays faster than object features in visual working memory</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/15.12.535" target="_blank">https://doi.org/10.1167/15.12.535</a></li>
+          <li class="my-1 hanging-16">강경용, 차옥균, 정상철. (2015, 1월 14&ndash;16일). <span class="font-bold">시각작업기억에서 대상 세부특징을 앞서는 관계 정보의 쇠잔</span> [포스터 발표]. 한국 인지 및 생물 심리학회, 제주, 한국.</li>
+          <li class="my-1 hanging-16">어강용, 차옥균, 강경용, 정상철. (2015, 1월 14&ndash;16일). <span class="font-bold">동공 크기가 밝기 지각에 미치는 영향</span> [포스터 발표]. 한국 인지 및 생물 심리학회, 제주, 한국.</li>
+          <li class="my-1 hanging-16">차옥균, 정상철. (2015, 1월 14&ndash;16일). <span class="font-bold">윤곽선 통합이 평균방위 지각에 미치는 영향</span> [구두 발표]. 한국 인지 및 생물 심리학회, 제주, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/Cha-Chong_KSCBP2015.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">Kang, M.-S., Eo, K. Y., Cha, O., &amp; Chong, S. C. (2014, November 15&ndash;19). <span class="italic">Inattention opens door for unconscious processing during continuous flash suppression</span> [Oral presentation]. Society for Neuroscience, Washington, DC, USA.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/Kang-Eo-Cha-Chong_SfN2014.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">Cha, O., &amp; Chong, S. C. (2014, May 16&ndash;21). <span class="italic">Contour integration affects perceived mean orientations of Gabors</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/14.10.1429" target="_blank">https://doi.org/10.1167/14.10.1429</a></li>
+          <li class="my-1 hanging-16">Eo, K. Y., Cha, O., Jung, Y., &amp; Chong, S. C. (2014, May 16&ndash;21). <span class="italic">The relationship between vividness of visual imagery and indirect size-measurements of the visual cortex</span> [Poster presentation]. Vision Sciences Society, St. Pete Beach, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/14.10.43" target="_blank">https://doi.org/10.1167/14.10.43</a></li>
+        </ul>
+
+        <h2 class="my-2 text-xl font-bold">2009&ndash;2011
+          <span class="inline-flex items-center mx-0.5 badge-plain">
+            <svg class="size-4 mx-px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M9.674 2.075a.75.75 0 0 1 .652 0l7.25 3.5A.75.75 0 0 1 17 6.957V16.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3V6.957a.75.75 0 0 1-.576-1.382l7.25-3.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7.5 9.75a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Zm3.25 0a.75.75 0 0 0-1.5 0v5.5a.75.75 0 0 0 1.5 0v-5.5Z" clip-rule="evenodd" />
+            </svg>
+            <span>Yonsei&nbsp;University</span>
+          </span>
+        </h2>
+        <ul class="mt-2 mb-4 list-none">
+          <li class="my-1 hanging-16">백이화, 차옥균, 정상철. (2011, 6월 24일). <span class="font-bold">양안 경합과 맹점에서의 표면 지각</span> [구두 발표]. 한국 인지과학회, 서울, 한국.</li>
+          <li class="my-1 hanging-16">차옥균, 정상철. (2011, 6월 24일). <span class="font-bold">유전자 알고리즘을 이용한 신경생리신호 분석</span> [구두 발표]. 한국 인지과학회, 서울, 한국.
+            <a class="badge-neutral-200 hover:bg-blue-200" href="pdfs-abstract/Cha-Chong_KSCS2011.pdf" target="_blank">abstract</a></li>
+          <li class="my-1 hanging-16">Baek, Y., Cha, O., &amp; Chong, S. C. (2011, May 6&ndash;11). <span class="italic">Temporal dynamics of binocular rivalry at the blind spot</span> [Poster presentation]. Vision Sciences Society, Naples, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/11.11.304" target="_blank">https://doi.org/10.1167/11.11.304</a></li>
+          <li class="my-1 hanging-16">Cha, O., &amp; Chong, S. C. (2010, May 7&ndash;-12). <span class="italic">Background is remapped across saccades</span> [Poster presentation]. Vision Sciences Society, Naples, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/10.7.516" target="_blank">https://doi.org/10.1167/10.7.516</a></li>
+          <li class="my-1 hanging-16">Baek, Y., Kim, J., Cha, O., &amp; Chong, S. C. (2009, May 8&ndash;13). <span class="italic">The quality of filled-in surface at the blind spot</span> [Poster presentation]. Vision Sciences Society, Naples, FL, USA.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/9.8.1028" target="_blank">https://doi.org/10.1167/9.8.1028</a></li>
+        </ul>
+        <!-- end presentations section -->
+      </div>
+    </div>
+    <!-- end contents section -->
+  </body>
+</html>

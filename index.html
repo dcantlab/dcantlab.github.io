@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCANT Lab</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="dcantlab.tailwind-v4.0.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400&display=swap">
+    <script src="https://w.behold.so/widget.js" type="module"></script>
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="hidden md:block p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <img class="flex-none w-[7.5rem] h-12 mr-2" src="images/dcantlab-dark.svg" alt="DCANT Lab">
+        <nav class="flex-1 flex items-center justify-center">
+          <ul class="flex gap-2">
+            <li><span class="nav-l1 bg-neutral-800">Home</span></li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="people.html">People</a></li>
+            <li>
+              <details class="open:[&_summary]:bg-neutral-700">
+                <summary class="nav-l1x hover:bg-neutral-700">
+                  <span class="mx-1">Research</span>
+                  <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                  </svg>
+                </summary>
+                <!-- start research dropdown -->
+                <ul class="absolute z-50 mt-1 list-none rounded-md border-2 border-neutral-300 shadow-lg bg-white text-black">
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/journal-articles.html">Journal&nbsp;Articles</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/research-topics.html">Research&nbsp;Topics</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/datasets-codes.html">Datasets/Codes</a></li>
+                </ul>
+                <!-- end research dropdown -->
+              </details>
+            </li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="shrink w-[7.5rem] ml-2"></div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start alt. header -->
+    <div class="block md:hidden p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <nav class="flex-none flex items-center w-8 mr-2">
+          <details class="open:[&_summary]:bg-neutral-700">
+            <summary class="flex items-center justify-center w-8 h-8 list-none rounded-md hover:bg-neutral-700">
+              <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </summary>
+            <!-- start hamburger menu -->
+            <div class="absolute z-50 left-0 w-full mt-4 p-2 shadow-lg bg-neutral-900">
+              <div class="container xl:max-w-7xl grid grid-cols-2 gap-2 mx-auto">
+                <ul class="list-none">
+                  <li><span class="alt-nav-l1 bg-neutral-800">Home</span></li>
+                  <li class="pb-1"><a class="alt-nav-l1 hover:bg-neutral-700" href="people.html">People</a></li>
+                  <li class="pt-1 border-t border-neutral-700"><a class="alt-nav-l1 hover:bg-neutral-700" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="flex flex-col">
+                  <div class="alt-nav-l1x">
+                    <span class="mx-1">Research</span>
+                    <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                    </svg>
+                  </div>
+                  <ul class="list-none">
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/journal-articles.html">Journal&nbsp;Articles</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/research-topics.html">Research&nbsp;Topics</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/datasets-codes.html">Datasets/Codes</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end hamburger menu -->
+          </details>
+        </nav>
+        <div class="flex-1 flex items-center justify-center">
+          <img class="w-[7.5rem] h-12" src="images/dcantlab-dark.svg" alt="DCANT Lab">
+        </div>
+        <div class="shrink w-8 ml-2"></div>
+      </div>
+    </div>
+    <!-- end alt. header -->
+
+    <!-- start hero section -->
+    <div class="bg-[url('images/hero-bg.jpg')]">
+      <div class="container max-w-4xl mx-auto px-8 py-8 md:py-12 bg-white/50">
+        <img class="float-left h-32 w-32 md:w-40 md:h-40 mr-4" src="images/decanter.svg" alt="Decanter">
+        <h1 class="font-sofia-sans-condensed font-normal text-3xl md:text-4xl">Decanting Conscious Awareness and Neural Timing</h1>
+        <p class="my-2 md:text-lg">
+          DCANT Lab is a research lab housed at Sogang University in Seoul, South Korea.
+          We study visual perception and awareness, focusing on topics such as <a class="underline-blue-600" href="research/research-topics.html#br">binocular rivalry</a>, <a class="underline-blue-600" href="research/research-topics.html#pr">perceptual rhythms</a>, and <a class="underline-blue-600" href="research/research-topics.html#ep">ensemble perception</a>.
+          Our research seeks to understand the influence of perceptual rhythms in visual processing and their interactions with visual awareness. 
+          We also investigate aspects of vision where awareness extends beyond visual processing capacities&mdash;for example, how we read the atmosphere of a crowd even when unable to process each face individually (ensemble perception).
+        </p>
+        <div class="clear-left"></div>
+      </div>
+    </div>
+    <!-- end hero section -->
+
+    <!-- start contents section -->
+    <div class="p-2">
+      <div class="container xl:max-w-7xl lg:flex lg:gap-8 mx-auto">
+        <!-- start news section -->
+        <div class="lg:basis-1/2">
+          <h1 class="inline-flex items-start my-2">
+            <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8.25 4.5a3.75 3.75 0 1 1 7.5 0v8.25a3.75 3.75 0 1 1-7.5 0V4.5Z" />
+              <path d="M6 10.5a.75.75 0 0 1 .75.75v1.5a5.25 5.25 0 1 0 10.5 0v-1.5a.75.75 0 0 1 1.5 0v1.5a6.751 6.751 0 0 1-6 6.709v2.291h3a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5h3v-2.291a6.751 6.751 0 0 1-6-6.709v-1.5A.75.75 0 0 1 6 10.5Z" />
+            </svg>
+            <span class="mx-1 text-2xl font-bold">Lab News</span>
+          </h1>
+          <ul class="mt-2 mb-4">
+            <!--<li class="my-1 hanging-16">Mar.&nbsp;4,&nbsp;2025&nbsp;&mdash;&nbsp;DCANT Lab opens its doors at Sogang University.</li>-->
+            <li class="my-1 hanging-16">Feb.&nbsp;10,&nbsp;2025&nbsp;&mdash;&nbsp;DCANT Lab prepares to launch at Sogang University, building on the research of <a class="underline-blue-600" href="https://ssmvl.github.io" target="_blank">Moonshine Vision Lab</a>.</li>
+          </ul>
+          <hr class="lg:hidden h-0.5 my-2 rounded-xs bg-neutral-300 border-0">
+        </div>
+        <!-- end news section -->
+
+        <!-- start photographs section -->
+        <div class="lg:basis-1/2">
+          <h1 class="inline-flex items-start my-2">
+            <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M1.5 5.625c0-1.036.84-1.875 1.875-1.875h17.25c1.035 0 1.875.84 1.875 1.875v12.75c0 1.035-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 18.375V5.625Zm1.5 0v1.5c0 .207.168.375.375.375h1.5a.375.375 0 0 0 .375-.375v-1.5a.375.375 0 0 0-.375-.375h-1.5A.375.375 0 0 0 3 5.625Zm16.125-.375a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375h1.5A.375.375 0 0 0 21 7.125v-1.5a.375.375 0 0 0-.375-.375h-1.5ZM21 9.375A.375.375 0 0 0 20.625 9h-1.5a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375h1.5a.375.375 0 0 0 .375-.375v-1.5Zm0 3.75a.375.375 0 0 0-.375-.375h-1.5a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375h1.5a.375.375 0 0 0 .375-.375v-1.5Zm0 3.75a.375.375 0 0 0-.375-.375h-1.5a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375h1.5a.375.375 0 0 0 .375-.375v-1.5ZM4.875 18.75a.375.375 0 0 0 .375-.375v-1.5a.375.375 0 0 0-.375-.375h-1.5a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375h1.5ZM3.375 15h1.5a.375.375 0 0 0 .375-.375v-1.5a.375.375 0 0 0-.375-.375h-1.5a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375Zm0-3.75h1.5a.375.375 0 0 0 .375-.375v-1.5A.375.375 0 0 0 4.875 9h-1.5A.375.375 0 0 0 3 9.375v1.5c0 .207.168.375.375.375Zm4.125 0a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Z" clip-rule="evenodd" />
+            </svg>
+            <span class="mx-1 text-2xl font-bold">Life at DCANT Lab</span>
+          </h1>
+          <behold-widget class="my-2" feed-id="9kofE8cdbJuYfhX8ZQI7"></behold-widget>
+        </div>
+        <!-- end photographs section -->
+      </div>
+    </div>
+    <!-- end contents section -->
+  </body>
+</html>

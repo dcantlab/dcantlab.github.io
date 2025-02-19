@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datasets/Codes &mdash; DCANT Lab</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="../dcantlab.tailwind-v4.0.css">
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="hidden md:block p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <img class="flex-none w-[7.5rem] h-12 mr-2" src="../images/dcantlab-dark.svg" alt="DCANT Lab">
+        <nav class="flex-1 flex items-center justify-center">
+          <ul class="flex gap-2">
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../index.html">Home</a></li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../people.html">People</a></li>
+            <li>
+              <details class="open:[&_summary]:bg-neutral-700">
+                <summary class="nav-l1x hover:bg-neutral-700">
+                  <span class="mx-1">Research</span>
+                  <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                  </svg>
+                </summary>
+                <!-- start research dropdown -->
+                <ul class="absolute z-50 mt-1 list-none rounded-md border-2 border-neutral-300 shadow-lg bg-white text-black">
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="journal-articles.html">Journal&nbsp;Articles</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research-topics.html">Research&nbsp;Topics</a></li>
+                  <li><span class="nav-l2 bg-neutral-100">Datasets/Codes</span></li>
+                </ul>
+                <!-- end research dropdown -->
+              </details>
+            </li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="shrink w-[7.5rem] ml-2"></div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start alt. header -->
+    <div class="block md:hidden p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <nav class="flex-none flex items-center w-8 mr-2">
+          <details class="open:[&_summary]:bg-neutral-700">
+            <summary class="flex items-center justify-center w-8 h-8 list-none rounded-md hover:bg-neutral-700">
+              <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </summary>
+            <!-- start hamburger menu -->
+            <div class="absolute z-50 left-0 w-full mt-4 p-2 shadow-lg bg-neutral-900">
+              <div class="container xl:max-w-7xl grid grid-cols-2 gap-2 mx-auto">
+                <ul class="list-none">
+                  <li><a class="alt-nav-l1 hover:bg-neutral-700" href="../index.html">Home</a></li>
+                  <li class="pb-1"><a class="alt-nav-l1 hover:bg-neutral-700" href="../people.html">People</a></li>
+                  <li class="pt-1 border-t border-neutral-700"><a class="alt-nav-l1 hover:bg-neutral-700" href="../contact.html">Contact</a></li>
+                </ul>
+                <div class="flex flex-col">
+                  <div class="alt-nav-l1x">
+                    <span class="mx-1">Research</span>
+                    <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                    </svg>
+                  </div>
+                  <ul class="list-none">
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="journal-articles.html">Journal&nbsp;Articles</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research-topics.html">Research&nbsp;Topics</a></li>
+                    <li><span class="alt-nav-l2 bg-neutral-800">Datasets/Codes</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end hamburger menu -->
+          </details>
+        </nav>
+        <div class="flex-1 flex items-center justify-center">
+          <img class="w-[7.5rem] h-12" src="../images/dcantlab-dark.svg" alt="DCANT Lab">
+        </div>
+        <div class="shrink w-8 ml-2"></div>
+      </div>
+    </div>
+    <!-- end alt. header -->
+
+    <!-- start contents section -->
+    <div class="p-2">
+      <div class="container xl:max-w-7xl mx-auto">
+        <!-- start PATS section -->
+        <h1 class="inline-flex items-start my-2">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm14.25 6a.75.75 0 0 1-.22.53l-2.25 2.25a.75.75 0 1 1-1.06-1.06L15.44 12l-1.72-1.72a.75.75 0 1 1 1.06-1.06l2.25 2.25c.141.14.22.331.22.53Zm-10.28-.53a.75.75 0 0 0 0 1.06l2.25 2.25a.75.75 0 1 0 1.06-1.06L8.56 12l1.72-1.72a.75.75 0 1 0-1.06-1.06l-2.25 2.25Z" clip-rule="evenodd" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">
+            Parametric Analysis of Temporal Structure (PATS)
+            <a class="inline-flex items-center mx-1 badge-button hover:bg-neutral-100" href="https://github.com/dcantlab/pats-matlab" target="_blank">
+              <svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 96">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#24292f"/>
+              </svg>
+              <span class="text-base font-normal">GitHub</span>
+            </a>
+          </span>
+        </h1>
+        <figure class="w-full max-w-96 lg:float-right mx-auto lg:ml-6 my-4">
+          <img class="w-full" src="images/PATS-example.png">
+          <figcaption class="mt-2"><span class="font-bold">Fig. 1.</span> Raw data and best-fit models with (red) and without (dark gray) embedded rhythms.</figcaption>
+        </figure>
+        <p class="my-2"><span class="italic">PATS</span> quantifies the strength of periodic oscillations embedded in duration data. The core idea is to:</p>
+        <ol class="list-decimal my-2 pl-8">
+          <li>Construct a rhythmic cumulative distribution function (rCDF) by embedding periodic oscillations into the cumulative distribution function (CDF) that models the duration data.</li>
+          <li>Estimate the additional variance explained by the rCDF compared to the CDF.</li>
+          <li>Adjust the oscillation amplitude parameter of the rCDF to reflect its contribution to explaining variance in the data.</li>
+        </ol>
+        <p class="my-2">Due to its parametric approach, PATS remains effective even with small datasets.
+          Figure 1 illustrates how an rCDF captures variance that a non-rhythmic CDF misses, using just 16 data points.
+          Detailed information about PATS can be found in the following article:</p>
+        <ul class="mt-2 mb-4 list-none">
+          <li class="my-1 hanging-16">Cha, O., &amp; Blake, R., (2024). Procedure for extracting temporal structure embedded within psychophysical data. <span class="italic">Behavior Research Methods</span>, <span class="italic">56</span>(6), 5482&ndash;5500.
+            <a class="underline-blue-600 break-words" href="https://doi.org/10.3758/s13428-023-02282-3" target="_blank">https://doi.org/10.3758/s13428-023-02282-3</a></li>
+        </ul>
+        <hr class="clear-both h-0.5 my-2 rounded-xs bg-neutral-300 border-0">
+        <!-- end PATS section -->
+
+        <!-- start face datasets section -->
+        <h1 class="inline-flex items-start my-2">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">
+            Face Datasets
+            <a class="inline-flex items-center mx-1 badge-button hover:bg-neutral-100" href="https://github.com/dcantlab/face-datasets" target="_blank">
+              <svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 96">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#24292f"/>
+              </svg>
+              <span class="text-base font-normal">GitHub</span>
+            </a>
+          </span>
+        </h1>
+        <p class="my-2"><span class="italic">DCANT Face Datasets</span> are not your typical collection of datasets.
+          Instead, they consist of image processing pipelines that generate masked face images from regular face images.
+          The current collection includes pipelines compatible with the <a class="underline-blue-600" href="https://www.chicagofaces.org/" target="_blank">Chicago Face Database</a> and the <a class="underline-blue-600" href="https://kdef.se/" target="_blank">Karolinska Directed Emotional Faces</a>.
+          Below, you can compare grayscale face images with their final masked versions (Fig. 2) generated by a sample pipeline provided in the GitHub repository.</p>
+        <figure class="w-full max-w-[48rem] mx-auto my-4">
+          <img class="w-full" src="images/face-datasets-sample.jpg">
+          <figcaption class="mt-2"><span class="font-bold">Fig. 2.</span> Grayscale face images and their final masked versions. The orignial face images were downloaded from <a class="underline-blue-600" href="https://unsplash.com/" target="_blank">Unsplah</a>.</figcaption>
+        </figure>
+        <hr class="h-0.5 my-2 rounded-xs bg-neutral-300 border-0">
+        <!-- end face datasets section -->
+
+        <!-- start randstim datasets section -->
+        <h1 class="inline-flex items-start my-2">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">
+            Random Stimulus Datasets
+            <a class="inline-flex items-center mx-1 badge-button hover:bg-neutral-100" href="https://github.com/dcantlab/randstim-datasets" target="_blank">
+              <svg class="w-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 96">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#24292f"/>
+              </svg>
+              <span class="text-base font-normal">GitHub</span>
+            </a>
+          </span>
+        </h1>
+        <p class="my-2"><span class="italic">DCANT Random Stimulus Datasets</span> are a collection of random shape and texture images and the code for generating them.
+          The datasets are divided into two types: splash shapes and zebra blobs, with each type further categorized into two datasets&mdash;categorical and continuous.
+          Splash shapes are simple silhouettes with contours defined by varying amplitudes at different radial frequencies.
+          Zebra blobs are created using band-pass filtered white noise patterns that are windowed and saturated.</p>
+        <p class="my-2">The categorical datasets consist of images sampled randomly from an object space, grouped into six subsets based on visual similarity.
+          The continuous datasets feature images sampled continuously from a two-dimensional feature space.
+          Sample images from the splash shape and zebra blob continuous datasets are shown in Figures 3 and 4.</p>
+        <div class="flex flex-col lg:flex-row gap-4 lg:gap-8 max-w-[30rem] lg:max-w-[62rem] mx-auto my-4">
+          <figure class="w-full">
+            <img class="w-full" src="images/splash-continuous-preview.png">
+            <figcaption class="mt-2"><span class="font-bold">Fig. 3.</span> Splash shapes sampled from a two-dimensional feature space. The feature space is flexible and can be defined with random parameters.</figcaption>
+          </figure>
+          <figure class="w-full">
+            <img class="w-full" src="images/zebra-continuous-preview.png">
+            <figcaption class="mt-2"><span class="font-bold">Fig. 4.</span> Zebra blobs sampled from a two-dimensional feature space. The feature space is flexible and can be defined with random parameters.</figcaption>
+          </figure>
+        </div>
+        <!-- end randstim datasets section -->
+      </div>
+    </div>
+    <!-- end contents section -->
+  </body>
+</html>

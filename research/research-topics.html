@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Topics &mdash; DCANT Lab</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="../dcantlab.tailwind-v4.0.css">
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // figure 3 functions
+        Array.prototype.shuffle = function() {
+          return this.map(a => ({k: Math.random(), v: a})).sort((a, b) => a.k - b.k).map(a => a.v);
+        };
+        var leftWasLarger = undefined;
+        const fig3Base = (c) => {
+          let ctx = c.getContext('2d');
+          ctx.fillStyle = 'rgb(128, 128, 128)';
+          ctx.fillRect(0, 0, c.width, c.height);
+          ctx.fillStyle = 'rgb(0, 0, 0)';
+          ctx.fillRect(c.width / 2 - 4, c.height / 2 - 4, 8, 8);
+        };
+        const fig3Ready = (c) => {
+          fig3Base(c);
+          let ctx = c.getContext('2d');
+          ctx.fillStyle = 'rgb(0, 0, 0)';
+          ctx.font = '19px sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText('Ready', c.width / 2, c.height / 3 * 2);
+          setTimeout(() => requestAnimationFrame(() => fig3PreArrays(c)), 800);
+        };
+        const fig3PreArrays = (c) => {
+          fig3Base(c);
+          setTimeout(() => requestAnimationFrame(() => fig3Arrays(c)), 150);
+        };
+        const fig3Arrays = (c) => {
+          fig3Base(c);
+          let ctx = c.getContext('2d');
+          ctx.fillStyle = 'rgb(0, 0, 0)';
+          ctx.lineWidth = 1.5;
+          let r = [[6, 6, 6, 6, 7, 7, 7, 7, 8, 9, 10, 11, 11, 12, 12].shuffle(),
+                   [6, 6, 7, 7, 8, 9, 10, 11, 11, 11, 11, 12, 12, 12, 12].shuffle()];
+          if (leftWasLarger) r = r.reverse();
+          for (let i = 0; i < 2; i++) {
+            let cx = c.width / 2 + (i - 0.5) * 224;
+            let cy = c.height / 2;
+            for (let j = 0; j < 15; j++) {
+              let col = Math.floor(j / 5);
+              let x = cx + (col - 1) * 48;
+              let y = cy + ((j - col * 5) - 2) * 48;
+              ctx.beginPath();
+              ctx.arc(x + (Math.random() * 12 - 6),
+                      y + (Math.random() * 12 - 6),
+                      r[i][j], 0, 2 * Math.PI);
+              ctx.stroke();
+            }
+          }
+          setTimeout(() => requestAnimationFrame(() => fig3PostArrays(c)), 250);
+        };
+        const fig3PostArrays = (c) => {
+          fig3Base(c);
+          setTimeout(() => requestAnimationFrame(() => fig3Feedback(c)), 800);
+        };
+        const fig3Feedback = (c) => {
+          fig3Base(c);
+          let ctx = c.getContext('2d');
+          ctx.fillStyle = 'rgb(0, 0, 0)';
+          ctx.font = '19px sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText(leftWasLarger ? 'Left side was' : 'Right side was', Math.floor(c.width / 2), Math.floor(c.height / 3 * 2));
+          ctx.fillText('larger on average', Math.floor(c.width / 2), Math.floor(c.height / 3 * 2 + 22));
+          setTimeout(() => { leftWasLarger = undefined; }, 50);
+        };
+
+        // figure 3 initialization
+        var c = document.getElementById('fig3-canvas');
+        requestAnimationFrame(() => fig3Base(c));
+        document.getElementById('fig3-button').addEventListener('click', function() {
+          if (leftWasLarger === undefined) {
+            leftWasLarger = (Math.random() < 0.5);
+            requestAnimationFrame(() => fig3Ready(c));
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="hidden md:block p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <img class="flex-none w-[7.5rem] h-12 mr-2" src="../images/dcantlab-dark.svg" alt="DCANT Lab">
+        <nav class="flex-1 flex items-center justify-center">
+          <ul class="flex gap-2">
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../index.html">Home</a></li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../people.html">People</a></li>
+            <li>
+              <details class="open:[&_summary]:bg-neutral-700">
+                <summary class="nav-l1x hover:bg-neutral-700">
+                  <span class="mx-1">Research</span>
+                  <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                  </svg>
+                </summary>
+                <!-- start research dropdown -->
+                <ul class="absolute z-50 mt-1 list-none rounded-md border-2 border-neutral-300 shadow-lg bg-white text-black">
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="journal-articles.html">Journal&nbsp;Articles</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                  <li><span class="nav-l2 bg-neutral-100">Research&nbsp;Topics</span></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="datasets-codes.html">Datasets/Codes</a></li>
+                </ul>
+                <!-- end research dropdown -->
+              </details>
+            </li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="shrink w-[7.5rem] ml-2"></div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start alt. header -->
+    <div class="block md:hidden p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <nav class="flex-none flex items-center w-8 mr-2">
+          <details class="open:[&_summary]:bg-neutral-700">
+            <summary class="flex items-center justify-center w-8 h-8 list-none rounded-md hover:bg-neutral-700">
+              <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </summary>
+            <!-- start hamburger menu -->
+            <div class="absolute z-50 left-0 w-full mt-4 p-2 shadow-lg bg-neutral-900">
+              <div class="container xl:max-w-7xl grid grid-cols-2 gap-2 mx-auto">
+                <ul class="list-none">
+                  <li><a class="alt-nav-l1 hover:bg-neutral-700" href="../index.html">Home</a></li>
+                  <li class="pb-1"><a class="alt-nav-l1 hover:bg-neutral-700" href="../people.html">People</a></li>
+                  <li class="pt-1 border-t border-neutral-700"><a class="alt-nav-l1 hover:bg-neutral-700" href="../contact.html">Contact</a></li>
+                </ul>
+                <div class="flex flex-col">
+                  <div class="alt-nav-l1x">
+                    <span class="mx-1">Research</span>
+                    <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                    </svg>
+                  </div>
+                  <ul class="list-none">
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="journal-articles.html">Journal&nbsp;Articles</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                    <li><span class="alt-nav-l2 bg-neutral-800">Research&nbsp;Topics</span></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="datasets-codes.html">Datasets/Codes</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end hamburger menu -->
+          </details>
+        </nav>
+        <div class="flex-1 flex items-center justify-center">
+          <img class="w-[7.5rem] h-12" src="../images/dcantlab-dark.svg" alt="DCANT Lab">
+        </div>
+        <div class="shrink w-8 ml-2"></div>
+      </div>
+    </div>
+    <!-- end alt. header -->
+
+    <!-- start contents section -->
+    <div class="p-2">
+      <div class="container xl:max-w-7xl mx-auto">
+        <!-- start visual awareness section -->
+        <h1 class="inline-flex items-start my-2" id="pr">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.5 3.798v5.02a3 3 0 0 1-.879 2.121l-2.377 2.377a9.845 9.845 0 0 1 5.091 1.013 8.315 8.315 0 0 0 5.713.636l.285-.071-3.954-3.955a3 3 0 0 1-.879-2.121v-5.02a23.614 23.614 0 0 0-3 0Zm4.5.138a.75.75 0 0 0 .093-1.495A24.837 24.837 0 0 0 12 2.25a25.048 25.048 0 0 0-3.093.191A.75.75 0 0 0 9 3.936v4.882a1.5 1.5 0 0 1-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0 1 15 8.818V3.936Z" clip-rule="evenodd" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">Perceptual Rhythms and Visual Awareness</span>
+        </h1>
+        <p class="my-2">While perceptual experience appears continuous and uninterrupted, studies reveal that it is composed of periodic intervals evidenced by fluctuating responsiveness to sensory input.
+          For instance, accuracies in simple detection tasks oscillate at 4&ndash;8 Hz (<a class="underline-blue-600" href="https://doi.org/10.1016/j.cub.2013.10.063" target="_blank">Fieblekorn, Saalmann, &amp; Kastner, 2013</a>), and response times in similar tasks exhibit periodic patterns at 5&ndash;15 Hz (<a class="underline-blue-600" href="https://doi.org/10.3758/s13428-023-02282-3" target="_blank">Cha &amp; Blake, 2024</a>).</p>
+        <figure class="w-full max-w-96 lg:float-right mx-auto lg:ml-6 my-4">
+          <video class="w-full" controls loop>
+            <source src="images/cWWI-10Hz.mp4" type="video/mp4">
+          </video>
+          <figcaption class="mt-2"><span class="font-bold">Fig. 1.</span> The continuous Wagon Wheel Illusion.
+            Play the movie, fixate on the white square at the center, and observe the rotation of the patterns on both sides of the vertical gray bar.</figcaption>
+        </figure>
+        <p class="mt-2 mb-4">A compelling visual demonstration of the discrete nature of perceptual experience can be observed in the continuous Wagon Wheel Illusion (Fig. 1; <a class="underline-blue-600" href="https://doi.org/10.1016/j.visres.2006.07.030" target="_blank">VanRullen, 2006</a>).
+          In this demonstration, the sine wave patterns of a rotating wheel undergo periodic changes at 10 Hz, a frequency considerably slower than the frame rate of 30 Hz, which prevents temporal aliasing.
+          Yet, we occasionally perceive the patterns on both sides rotating in the same direction.
+          This suggests that our visual system samples sensory input at relatively low frequencies, shaping our visual processing in a rhythmic manner.</p>
+        <h2 class="my-2 text-xl font-bold" id="br">Does Visual Awareness Unfold in a Rhythmic Manner?</h2>
+        <p class="my-2">Binocular rivalry provides a valuable tool to explore this question.
+          This phenomenon occurs when an observer is presented with very different, incompatible images to the left and right eyes (Fig. 2).
+          In such cases, the observer perceives only one image at a time, with perception stochastically alternating between the two images.</p>
+        <figure class="w-full max-w-96 lg:float-left mx-auto lg:mr-6 my-4">
+          <img class="w-full" src="images/BR-face-house.png">
+          <figcaption class="mt-2"><span class="font-bold">Fig. 2.</span> Binocular rivalry between face and house images.
+            View this image with red-cyan anaglyph glasses.</figcaption>
+        </figure>
+        <p class="mt-2 mb-4">By asking the observer to continuously report their perception during binocular rivalry, visual awareness can be probed.
+          Interestingly, this approach reveals that transitions to the previously suppressed image occur in rhythmic cycles, with periods of frequent transitions alternating with periods of infrequent transitions (<a class="underline-blue-600" href="https://doi.org/10.1073/pnas.1905174116" target="_blank">Cha &amp; Blake, 2019</a>).
+          This pattern suggests that visual awareness is shaped by an underlying temporal structure.</p>
+        <h2 class="my-2 text-xl font-bold">Research at DCANT Lab</h2>
+        <p class="mt-2 mb-4">At DCANT Lab, we explore how the brain maintains continuous and uninterrupted visual awareness despite the limitations imposed by the temporal structure of visual processing.
+          To investigate this, we use electroencephalography (EEG) to track periodic oscillations in the brain and computational models to uncover periodicity embedded in behavior.
+          Additionally, we develop computational models to simulate how the underlying temporal structure shapes visual awareness.</p>
+        <hr class="clear-both h-0.5 my-2 rounded-xs bg-neutral-300 border-0">
+        <!-- end visual awareness section -->
+
+        <!-- start ensemble perception section -->
+        <h1 class="inline-flex items-start my-2" id="ep">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.5 3.798v5.02a3 3 0 0 1-.879 2.121l-2.377 2.377a9.845 9.845 0 0 1 5.091 1.013 8.315 8.315 0 0 0 5.713.636l.285-.071-3.954-3.955a3 3 0 0 1-.879-2.121v-5.02a23.614 23.614 0 0 0-3 0Zm4.5.138a.75.75 0 0 0 .093-1.495A24.837 24.837 0 0 0 12 2.25a25.048 25.048 0 0 0-3.093.191A.75.75 0 0 0 9 3.936v4.882a1.5 1.5 0 0 1-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0 1 15 8.818V3.936Z" clip-rule="evenodd" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">Ensemble Perception</span>
+        </h1>
+        <p class="my-2">Perceptual experience often feels far richer than the brain can feasibly process at any given moment.
+          Imagine scanning a room full of people and trying to gauge whether they are enjoying the scene.
+          Surprisingly, this task does not feel overwhelming or impossible.</p>
+        <figure class="w-full max-w-[28rem] lg:float-left mx-auto lg:mr-6 my-4">
+          <canvas class="w-full aspect-4/3" id="fig3-canvas" width="448" height="336"></canvas>
+          <figcaption class="mt-2"><span class="font-bold">Fig. 3.</span> Demonstration of ensemble perception.
+            <button class="px-1 rounded-md bg-white hover:bg-neutral-100 border border-neutral-400 shadow-sm" id="fig3-button">Click&nbsp;here</button> and fixate on the black square at the center.
+            Click again to start a new trial.</figcaption>
+        </figure>
+        <p class="my-2">This seemingly effortless task requires extracting statistical properties from a large group of stimuli (e.g., extrating the mean emotion from a crowd of faces).
+          Researchers suggest that we possess an ability to efficiently summarize large amounts of visual information into meaningful patterns or properties, referred to as ensemble perception (for review, see <a class="underline-blue-600" href="https://doi.org/10.1146/annurev-psych-010416-044232" target="_blank">Whitney &amp; Yamanashi Leib, 2018</a>).
+          For a quick demonstration, play the interactive Figure 3, wait for the two arrays of circles to flash briefly on the left and right, and silently decide which array has the larger average size.
+          You might expect this to be a very difficult task, but you will likely find yourself agreeing with the correct response when it appears after the arrays.</p>
+        <p class="mt-2 mb-4">At DCANT Lab, we investigate whether ensemble perception relies on shared mechanisms and how it differs from object perception (e.g., <a class="underline-blue-600" href="https://doi.org/10.3758/s13423-021-01982-1" target="_blank">Cha, Blake, &amp; Gauthier, 2022</a>; <a class="underline-blue-600" href="https://doi.org/10.1037/xge0001582" target="_blank">Chang, Cha, &amp; Gauthier, 2024</a>).
+          By studying how the brain processes large groups of stimuli, we seek to understand the mechanisms that allow visual awareness to operate seamlessly, even within the constraints of visual processing.</p>
+        <div class="clear-both"></div>
+        <!-- end ensemble perception section -->
+      </div>
+    </div>
+    <!-- end contents section -->
+  </body>
+</html>
