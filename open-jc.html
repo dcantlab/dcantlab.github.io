@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Journal Club &mdash; DCANT Lab</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="dcantlab.tailwind-v4.0.css">
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="hidden md:block p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <img class="flex-none w-[7.5rem] h-12 mr-2" src="images/dcantlab-dark.svg" alt="DCANT Lab">
+        <nav class="flex-1 flex items-center justify-center">
+          <ul class="flex gap-2">
+            <li><a class="nav-l1 hover:bg-neutral-700" href="index.html">Home</a></li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="people.html">People</a></li>
+            <li>
+              <details class="open:[&_summary]:bg-neutral-700">
+                <summary class="nav-l1x hover:bg-neutral-700">
+                  <span class="mx-1">Research</span>
+                  <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                  </svg>
+                </summary>
+                <!-- start research dropdown -->
+                <ul class="absolute z-50 mt-1 list-none rounded-md border-2 border-neutral-300 shadow-lg bg-white text-black">
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/journal-articles.html">Journal&nbsp;Articles</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/research-topics.html">Research&nbsp;Topics</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="research/datasets-codes.html">Datasets/Codes</a></li>
+                </ul>
+                <!-- end research dropdown -->
+              </details>
+            </li>
+            <li><span class="nav-l1 bg-neutral-800">Open&nbsp;JC</span></li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="shrink w-0 lg:w-[7.5rem] ml-2"></div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start alt. header start -->
+    <div class="block md:hidden p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <nav class="flex-none flex items-center w-8 mr-2">
+          <details class="open:[&_summary]:bg-neutral-700">
+            <summary class="flex items-center justify-center w-8 h-8 list-none rounded-md hover:bg-neutral-700">
+              <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </summary>
+            <!-- start hamburger menu -->
+            <div class="absolute z-50 left-0 w-full mt-4 p-2 shadow-lg bg-neutral-900">
+              <div class="container xl:max-w-7xl grid grid-cols-2 gap-2 mx-auto">
+                <ul class="list-none">
+                  <li><a class="alt-nav-l1 hover:bg-neutral-700" href="index.html">Home</a></li>
+                  <li class="pb-1"><a class="alt-nav-l1 hover:bg-neutral-700" href="people.html">People</a></li>
+                  <li class="pt-1 border-t border-neutral-700"><span class="alt-nav-l1 bg-neutral-800">Open&nbsp;JC</span></li>
+                  <li><a class="alt-nav-l1 hover:bg-neutral-700" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="flex flex-col">
+                  <div class="alt-nav-l1x">
+                    <span class="mx-1">Research</span>
+                    <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                    </svg>
+                  </div>
+                  <ul class="list-none">
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/journal-articles.html">Journal&nbsp;Articles</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/research-topics.html">Research&nbsp;Topics</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="research/datasets-codes.html">Datasets/Codes</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end hamburger menu -->
+          </details>
+        </nav>
+        <div class="flex-1 flex items-center justify-center">
+          <img class="w-[7.5rem] h-12" src="images/dcantlab-dark.svg" alt="DCANT Lab">
+        </div>
+        <div class="shrink w-8 ml-2"></div>
+      </div>
+    </div>
+    <!-- end alt. header -->
+
+    <!-- start contents section -->
+    <div class="p-2">
+      <div class="container xl:max-w-7xl mx-auto">
+        <!-- start intro section -->
+        <h1 class="inline-flex items-start my-2">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M1.5 9.832v1.793c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875V9.832a3 3 0 0 0-.722-1.952l-3.285-3.832A3 3 0 0 0 16.215 3h-8.43a3 3 0 0 0-2.278 1.048L2.222 7.88A3 3 0 0 0 1.5 9.832ZM7.785 4.5a1.5 1.5 0 0 0-1.139.524L3.881 8.25h3.165a3 3 0 0 1 2.496 1.336l.164.246a1.5 1.5 0 0 0 1.248.668h2.092a1.5 1.5 0 0 0 1.248-.668l.164-.246a3 3 0 0 1 2.496-1.336h3.165l-2.765-3.226a1.5 1.5 0 0 0-1.139-.524h-8.43Z" clip-rule="evenodd" />
+            <path d="M2.813 15c-.725 0-1.313.588-1.313 1.313V18a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-1.688c0-.724-.588-1.312-1.313-1.312h-4.233a3 3 0 0 0-2.496 1.336l-.164.246a1.5 1.5 0 0 1-1.248.668h-2.092a1.5 1.5 0 0 1-1.248-.668l-.164-.246A3 3 0 0 0 7.046 15H2.812Z" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">Open Journal Club<span class="font-normal"> (Spring 2025)</span></span>
+        </h1>
+        <p class="mt-2">We meet at 3 PM every Friday to discuss a paper.
+          Everyone is welcome to join&mdash;no registration or sign-up required!
+          Just show up, keeping these two expectations in mind:</p>
+        <ol class="list-decimal list-outside pl-5">
+          <li><span class="font-bold">Read the paper beforehand.</span> The discussion will be most meaningful if you&apos;ve read the paper.
+            But don&apos;t worry if you don&apos;t understand everything. Feel free to ask questions to help everyone gain a better understanding.</li>
+          <li><span class="font-bold">Be ready to participate.</span> Share any thoughts, questions, or insights that come to mind.</li>
+        </ol>
+        <p class="mt-2 mb-4">Each week, a different member of the DCANT Lab will give a brief summary to refresh everyone on the paper and then lead the discussion.
+          The meeting will be in Korean, and the paper for each meeting will be announced about two weeks in advance.
+          You can find the paper and meeting location below.</p>
+        <p class="mt-4">DCANT Lab에서는 매주 금요일 오후 3시에 모여 논문에 대해 토론합니다.
+          별도의 등록이나 신청 없이 그냥 오시면 됩니다. 오픈 저널 클럽은 누구든지 환영합니다!
+          단, 다음 두 가지만 기억해주세요:</p>
+        <ol class="list-decimal list-outside pl-5">
+          <li><span class="font-bold">사전에 논문을 읽어오기.</span> 논문을 미리 읽어야 의미 있는 토론을 할 수 있습니다.
+            하지만 모든 내용을 완벽히 이해하지 못해도 괜찮습니다. 자유롭게 질문하면서 함께 논문의 내용을 이해해 보아요.</li>
+          <li><span class="font-bold">토론에 적극 참여하기.</span> 떠오르는 생각, 질문, 의견을 편하게 나누어 주세요.</li>
+        </ol>
+        <p class="mt-2 mb-4">매주 DCANT Lab 구성원 중 한 명이 논문을 간략히 요약한 후 토론을 주도합니다.
+          오픈 저널 클럽은 한국어로 진행되며, 논문은 보통 모임 2주 전에 공지됩니다.
+          각 주차의 논문과 모임 장소에 대한 정보는 아래에서 확인할 수 있습니다.</p>
+        <hr class="h-0.5 my-2 rounded-xs bg-neutral-300 border-0">
+        <!-- end intro section -->
+
+        <!-- start schedule section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2 mb-4">
+          <div>
+            <h2 class="font-bold">March 28, 3 PM</h2>
+            <ul>
+              <li>Host &mdash; Oakyoon Cha</li>
+              <li>Location &mdash; TBA</li>
+              <li class="hanging-16">Gao, Y., Chen, S., &amp; Rahnev, D. (2025). Dynamics of sensory and decisional biases in perceptual decision making: Insights from the face distortion illusion. <span class="italic">Psychonomic Bulletin &amp; Review</span>, <span class="italic">32</span>, 317&ndash;325.
+                <a class="underline-blue-600 break-words" href="https://doi-org.libproxy.sogang.ac.kr/10.3758/s13423-024-02539-8" target="_blank">https://doi.org/10.3758/s13423-024-02539-8</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- end schedule section -->
+      </div>
+    </div>
+    <!-- end contents section -->
+  </body>
+</html>
