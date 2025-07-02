@@ -18,9 +18,27 @@
           }),
           scrollWheel: false
         });
+        // marker (office)
         new naver.maps.Marker({
-          position: new naver.maps.LatLng(37.552155, 126.943160),
-          map: map
+          position: new naver.maps.LatLng(37.551950, 126.943260),
+          map: map,
+          icon: {
+            url: 'images/pin-office.svg',
+            size: new naver.maps.Size(24, 24),
+            origin: new naver.maps.Point(0, 0),
+            anchor: new naver.maps.Point(12, 24)
+          }
+        });
+        // marker (lab)
+        new naver.maps.Marker({
+          position: new naver.maps.LatLng(37.550530, 126.943640),
+          map: map,
+          icon: {
+            url: 'images/pin-lab.svg',
+            size: new naver.maps.Size(24, 24),
+            origin: new naver.maps.Point(0, 0),
+            anchor: new naver.maps.Point(12, 24)
+          }
         });
       });
     </script>
@@ -127,6 +145,12 @@
             <span class="mx-1 text-2xl font-bold">For Future Team Members</span>
           </h1>
           <div class="my-2">
+            <h2 class="text-lg font-bold">How do I apply for an undergraduate internship?</h2>
+            <p class="ml-2">I highly recommend attending <a class="underline-blue-600" href="open-jc.html">Open Journal Club</a> several times before considering an internship at DCANT Lab.
+              If you find that your interests align with the topics we discuss, talk to Oakyoon Cha.
+              We will then discuss your potential appointment and the kind of work you would do as an intern.</p>
+          </div>
+          <div class="my-2">
             <h2 class="text-lg font-bold">What kinds of research areas can I study at DCANT Lab?</h2>
             <p class="ml-2">Please refer to the <a class="underline-blue-600" href="research/research-topics.html">Research Topics</a> page for detailed information.
               In addition to those topics, we are broadly interested in research areas related to &lsquo;visual&rsquo; awareness.</p>
@@ -167,12 +191,13 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
               </svg>
               <span>Dasan Hall Rm. 341</span>
+              <img class="size-6 ml-1" src="images/pin-office.svg">
             </li>
             <li class="flex items-start my-1">
               <svg class="size-6 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
               </svg>
-              <span>Office Hours &mdash; Mon. 10:00 AM&ndash;12:00 PM; Tue. &amp; Thu. 4:30&ndash;6:30 PM</span>
+              <span>Office Hours &mdash; <span class="text-neutral-400">TBA in Fall 2025</span></span>
             </li>
             <li class="my-1">For inquiries regarding classes, admission to the lab, or general questions.</li>
           </ul>
@@ -188,7 +213,8 @@
               <svg class="size-6 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
               </svg>
-              <span><span class="text-neutral-400">TBA</span></span>
+              <span>Teilhard Hall Rm. 1106</span>
+              <img class="size-6 ml-1" src="images/pin-lab.svg">
             </li>
             <li class="my-1">For inquiries about experiments, participation, or contacting graduate students.</li>
           </ul>
