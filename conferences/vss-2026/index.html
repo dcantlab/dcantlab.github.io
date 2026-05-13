@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCANT Lab</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="../../dcantlab.tailwind-v4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400&display=swap">
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="hidden md:block p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <img class="flex-none w-[7.5rem] h-12 mr-2" src="../../images/dcantlab-dark.svg" alt="DCANT Lab">
+        <nav class="flex-1 flex items-center justify-center">
+          <ul class="flex gap-2">
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../../index.html">Home</a></li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../../people.html">People</a></li>
+            <li>
+              <details class="open:[&_summary]:bg-neutral-700">
+                <summary class="nav-l1x hover:bg-neutral-700">
+                  <span class="mx-1">Research</span>
+                  <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                  </svg>
+                </summary>
+                <!-- start research dropdown -->
+                <ul class="absolute z-50 mt-1 list-none rounded-md border-2 border-neutral-300 shadow-lg bg-white text-black">
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="../../research/journal-articles.html">Journal&nbsp;Articles</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="../../research/posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="../../research/research-topics.html">Research&nbsp;Topics</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="../../research/datasets-codes.html">Datasets/Codes</a></li>
+                </ul>
+                <!-- end research dropdown -->
+              </details>
+            </li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../../open-jc.html">Open&nbsp;JC</a></li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="shrink w-0 lg:w-[7.5rem] ml-2"></div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start alt. header -->
+    <div class="block md:hidden p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <nav class="flex-none flex items-center w-8 mr-2">
+          <details class="open:[&_summary]:bg-neutral-700">
+            <summary class="flex items-center justify-center w-8 h-8 list-none rounded-md hover:bg-neutral-700">
+              <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </summary>
+            <!-- start hamburger menu -->
+            <div class="absolute z-50 left-0 w-full mt-4 p-2 shadow-lg bg-neutral-900">
+              <div class="container xl:max-w-7xl grid grid-cols-2 gap-2 mx-auto">
+                <ul class="list-none">
+                  <li><a class="alt-nav-l1 hover:bg-neutral-700" href="../../index.html">Home</a></li>
+                  <li class="pb-1"><a class="alt-nav-l1 hover:bg-neutral-700" href="../../people.html">People</a></li>
+                  <li class="pt-1 border-t border-neutral-700"><a class="alt-nav-l1 hover:bg-neutral-700" href="../../open-jc.html">Open&nbsp;JC</a></li>
+                  <li><a class="alt-nav-l1 hover:bg-neutral-700" href="../../contact.html">Contact</a></li>
+                </ul>
+                <div class="flex flex-col">
+                  <div class="alt-nav-l1x">
+                    <span class="mx-1">Research</span>
+                    <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                    </svg>
+                  </div>
+                  <ul class="list-none">
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="../../research/journal-articles.html">Journal&nbsp;Articles</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="../../research/posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="../../research/research-topics.html">Research&nbsp;Topics</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="../../research/datasets-codes.html">Datasets/Codes</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end hamburger menu -->
+          </details>
+        </nav>
+        <div class="flex-1 flex items-center justify-center">
+          <img class="w-[7.5rem] h-12" src="../../images/dcantlab-dark.svg" alt="DCANT Lab">
+        </div>
+        <div class="shrink w-8 ml-2"></div>
+      </div>
+    </div>
+    <!-- end alt. header -->
+
+    <!-- start contents section -->
+    <div class="p-2">
+      <div class="container xl:max-w-7xl mx-auto">
+        <!-- start poster section -->
+        <h1 class="inline-flex items-start my-2">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.04 16.5.5-1.5h6.42l.5 1.5H8.29Zm7.46-12a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0v-6Zm-3 2.25a.75.75 0 0 0-1.5 0v3.75a.75.75 0 0 0 1.5 0V9Zm-3 2.25a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5Z" clip-rule="evenodd" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">VSS 2026 Posters</span>
+        </h1>
+        <h2 class="my-2 text-xl font-bold">Mon 8:30am&ndash;12:30pm, Pavilion</h2>
+        <ul class="mt-2 mb-4 list-none">
+          <li class="my-1 hanging-16">43.407 &mdash; What Determines Switch Versus Return Transitions During Binocular Rivalry? &mdash; Oakyoon Cha
+            <a class="badge-neutral-200 hover:bg-blue-200" href="oc_vss-2026-poster.pdf" target="_blank">poster PDF</a></li>
+          <li class="my-1 hanging-16">43.440 &mdash; Task-Irrelevant Motion Strengthens Motion Silencing of Color Changes. &mdash; Hyerim Kim &amp; Oakyoon Cha
+            <a class="badge-neutral-200 hover:bg-blue-200" href="hk-oc_vss-2026-poster.pdf" target="_blank">poster PDF</a></li>
+        </ul>
+        <h2 class="my-2 text-xl font-bold">Tue 8:30am&ndash;12:30pm, Pavilion</h2>
+        <ul class="mt-2 mb-4 list-none">
+          <li class="my-1 hanging-16">53.401 &mdash; Behavioral Alpha Rhythms Reveal Suppression of Predictable Distractors. &mdash; Suyeon Kim &amp; Oakyoon Cha
+            <a class="badge-neutral-200 hover:bg-blue-200" href="sk-oc_vss-2026-poster.pdf" target="_blank">poster PDF</a></li>
+        </ul>
+        <!-- end poster section -->
+      </div>
+    </div>
+    <!-- end contents section -->
+  </body>
+</html>
