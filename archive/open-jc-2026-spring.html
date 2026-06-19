@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Journal Club &mdash; DCANT Lab</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="../dcantlab.tailwind-v4.css">
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="hidden md:block p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <img class="flex-none w-[7.5rem] h-12 mr-2" src="../images/dcantlab-dark.svg" alt="DCANT Lab">
+        <nav class="flex-1 flex items-center justify-center">
+          <ul class="flex gap-2">
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../index.html">Home</a></li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../people.html">People</a></li>
+            <li>
+              <details class="open:[&_summary]:bg-neutral-700">
+                <summary class="nav-l1x hover:bg-neutral-700">
+                  <span class="mx-1">Research</span>
+                  <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                  </svg>
+                </summary>
+                <!-- start research dropdown -->
+                <ul class="absolute z-50 mt-1 list-none rounded-md border-2 border-neutral-300 shadow-lg bg-white text-black">
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="../research/journal-articles.html">Journal&nbsp;Articles</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="../research/posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="../research/research-topics.html">Research&nbsp;Topics</a></li>
+                  <li><a class="nav-l2 hover:bg-neutral-200" href="../research/datasets-codes.html">Datasets/Codes</a></li>
+                </ul>
+                <!-- end research dropdown -->
+              </details>
+            </li>
+            <li><span class="nav-l1 bg-neutral-800">Open&nbsp;JC</span></li>
+            <li><a class="nav-l1 hover:bg-neutral-700" href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="shrink w-0 lg:w-[7.5rem] ml-2"></div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start alt. header start -->
+    <div class="block md:hidden p-2 bg-black text-white">
+      <div class="flex container xl:max-w-7xl mx-auto">
+        <nav class="flex-none flex items-center w-8 mr-2">
+          <details class="open:[&_summary]:bg-neutral-700">
+            <summary class="flex items-center justify-center w-8 h-8 list-none rounded-md hover:bg-neutral-700">
+              <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </summary>
+            <!-- start hamburger menu -->
+            <div class="absolute z-50 left-0 w-full mt-4 p-2 shadow-lg bg-neutral-900">
+              <div class="container xl:max-w-7xl grid grid-cols-2 gap-2 mx-auto">
+                <ul class="list-none">
+                  <li><a class="alt-nav-l1 hover:bg-neutral-700" href="../index.html">Home</a></li>
+                  <li class="pb-1"><a class="alt-nav-l1 hover:bg-neutral-700" href="../people.html">People</a></li>
+                  <li class="pt-1 border-t border-neutral-700"><span class="alt-nav-l1 bg-neutral-800">Open&nbsp;JC</span></li>
+                  <li><a class="alt-nav-l1 hover:bg-neutral-700" href="../contact.html">Contact</a></li>
+                </ul>
+                <div class="flex flex-col">
+                  <div class="alt-nav-l1x">
+                    <span class="mx-1">Research</span>
+                    <svg class="flex-none size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5">
+                    </svg>
+                  </div>
+                  <ul class="list-none">
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="../research/journal-articles.html">Journal&nbsp;Articles</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="../research/posters-talks.html">Posters&nbsp;&amp;&nbsp;Talks</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="../research/research-topics.html">Research&nbsp;Topics</a></li>
+                    <li><a class="alt-nav-l2 hover:bg-neutral-700" href="../research/datasets-codes.html">Datasets/Codes</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end hamburger menu -->
+          </details>
+        </nav>
+        <div class="flex-1 flex items-center justify-center">
+          <img class="w-[7.5rem] h-12" src="../images/dcantlab-dark.svg" alt="DCANT Lab">
+        </div>
+        <div class="shrink w-8 ml-2"></div>
+      </div>
+    </div>
+    <!-- end alt. header -->
+
+    <!-- start contents section -->
+    <div class="p-2">
+      <div class="container xl:max-w-7xl mx-auto">
+        <!-- start backlink -->
+        <p class="my-2">Back to <a class="underline-blue-600" href="../open-jc.html">current Open JC</a></p>
+        <!-- end backlink -->
+        <!-- start intro section -->
+        <h1 class="inline-flex items-start my-2">
+          <svg class="flex-none size-8 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
+          </svg>
+          <span class="mx-1 text-2xl font-bold">Open Journal Club<span class="font-normal"> (Spring 2026)</span></span>
+        </h1>
+        <p class="mt-2">We meet at <a href="contact.html#map"><img class="size-6 inline" src="images/pin-lab.svg"></a>DCANT Lab (Teilhard Hall Rm. 1106) every Thursday at 10:30 AM to discuss a paper.
+          Everyone is welcome to join, no registration or sign-up required!
+          Just show up with these two expectations in mind:</p>
+        <ol class="list-decimal list-outside pl-5">
+          <li><span class="font-bold">Read the paper beforehand.</span> The discussion will be much more meaningful if you&apos;ve read the paper.
+            Don&apos;t worry if you don&apos;t understand everything. Questions are always welcome and help everyone learn.</li>
+          <li><span class="font-bold">Join the conversation.</span> Share your thoughts, questions, insights, or anything that comes to mind.</li>
+        </ol>
+        <p class="mt-2 mb-4">
+          In each meeting, a member of the DCANT Lab gives a brief summary of the paper and then leads the discussion.
+          Meetings are held in Korean, and the paper for each meeting is announced about two weeks in advance.
+          You can find the date, time, and paper for each meeting below.</p>
+        <p class="mt-4">매주 목요일 오전 10:30에 <a href="contact.html#map"><img class="size-6 inline" src="images/pin-lab.svg"></a>DCANT Lab(떼이야르관 1106호)에서 논문을 읽고 함께 토론합니다.
+          별도의 등록이나 신청 없이 그냥 오시면 됩니다. 오픈 저널 클럽은 누구든지 환영합니다!
+          오픈 저널 클럽에 참여하실 때는 다음 두 가지를 기억해주세요:</p>
+        <ol class="list-decimal list-outside pl-5">
+          <li><span class="font-bold">논문을 미리 읽어 오세요.</span> 논문을 읽고 오면 훨씬 더 의미 있는 토론이 될 수 있습니다.
+            다 이해하지 못해도 괜찮습니다. 궁금한 점을 자유롭게 질문해 주세요. 질문은 모두의 이해를 돕습니다.</li>
+          <li><span class="font-bold">토론에 적극적으로 참여해 주세요.</span> 떠오르는 생각, 질문, 의견 등 무엇이든 편하게 나누어 주세요.</li>
+        </ol>
+        <p class="mt-2 mb-4">각 모임에서는 DCANT Lab 구성원 한 명이 논문을 간단히 요약한 후 토론을 이끌어 갑니다.
+          모임은 한국어로 진행되며, 논문은 약 2주 전에 공지됩니다.
+          각 모임의 날짜 및 시간과 논문은 아래에서 확인하실 수 있습니다.</p>
+        <hr class="h-0.5 my-2 rounded-xs bg-neutral-300 border-0">
+        <!-- end intro section -->
+
+        <!-- start schedule section -->
+        <div class="md:columns-2 mt-2 mb-4">
+          <h2 class="font-bold break-inside-avoid break-after-avoid italic">Stay tuned!</h2>
+          <p class="mb-2 break-inside-avoid break-before-avoid italic">June 4 is our last Open JC of the Spring 2026 term. Open JC resumes for the summer in late June.</p>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">June 4, 10:30 AM</h2>
+          <ul class="mb-2 break-inside-avoid break-before-avoid">
+            <li>Host &mdash; Suyeon Kim</li>
+            <li class="hanging-16">
+              Gao, Y., De Waard, J., &amp; Theeuwes, J. (2023). Learning to suppress a location is configuration-dependent. <span class="italic">Attention, Perception, &amp; Psychophysics</span>, <span class="italic">85</span>(7), 2170&ndash;2177.
+              <a class="underline-blue-600 break-words" href="https://doi.org/10.3758/s13414-023-02732-2" target="_blank">https://doi.org/10.3758/s13414-023-02732-2</a></li>
+          </ul>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">May 28, 10:30 AM &mdash; VSS Sharing</h2>
+          <p class="mb-2 break-inside-avoid break-before-avoid">VSS 2026 attendees will share interesting studies and highlights from the conference.</p>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">May 14 &amp; May 21 &mdash; No Open JC</h2>
+          <p class="mb-2 break-inside-avoid break-before-avoid">DCANT Lab will be attending the annual meeting of the <a class="underline-blue-600 break-words" href="https://www.visionsciences.org/" target="_blank">Vision Sciences Society</a>.
+            Stay tuned for Instagram updates on the <a class="underline-blue-600 break-words" href="index.html">front page</a>.</p>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">May 7, 10:30 AM &mdash; Poster Presentation Practice</h2>
+          <p class="mb-2 break-inside-avoid break-before-avoid">To prepare for their poster presentations at the annual meeting of the <a class="underline-blue-600 break-words" href="https://www.visionsciences.org/" target="_blank">Vision Sciences Society</a>, Hyerim and Suyeon will give practice runs of their posters.
+            Everyone is welcome to join the session and share honest feedback.
+            <span class="italic">This practice session will be conducted in English.</span></p>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">April 30, 10:30 AM</h2>
+          <ul class="mb-2 break-inside-avoid break-before-avoid">
+            <li>Host &mdash; Oakyoon Cha</li>
+            <li class="hanging-16">
+              Zhang, Y., & Gaspelin, N. (2026). From capture to control: Initial capture increases learned suppression. <span class="italic">Psychological Science</span>, <span class="italic">37</span>(4), 227&ndash;242.
+              <a class="underline-blue-600 break-words" href="https://doi.org/10.1177/09567976261430288" target="_blank">https://doi.org/10.1177/09567976261430288</a></li>
+          </ul>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">April 23, 10:30 AM</h2>
+          <ul class="mb-2 break-inside-avoid break-before-avoid">
+            <li>Host &mdash; Kiryung Kim</li>
+            <li class="hanging-16">
+              He, J., Taveras-Cruz, Y., &amp; Eskew, R. T. (2025). The Boynton Illusion: Chromatic edge attraction to a luminance contour. <span class="italic">Journal of Vision</span>, <span class="italic">25</span>(3), 3.
+              <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.25.3.3" target="_blank">https://doi.org/10.1167/jov.25.3.3</a></li>
+          </ul>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">April 16, 10:30 AM</h2>
+          <ul class="mb-2 break-inside-avoid break-before-avoid">
+            <li>Host &mdash; Heeho Shin</li>
+            <li class="hanging-16">
+              Capizzi, M., Charras, P., &amp; Chica, A. B. (2026). Seeing through space and time: Comparing the effects of exogenous spatial and rhythmic temporal attention on visual awareness. <span class="italic">Consciousness and Cognition</span>, <span class="italic">141</span>, 104040.
+              <a class="underline-blue-600 break-words" href="https://doi.org/10.1016/j.concog.2026.104040" target="_blank">https://doi.org/10.1016/j.concog.2026.104040</a></li>
+          </ul>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">April 9, 10:30 AM</h2>
+          <ul class="mb-2 break-inside-avoid break-before-avoid">
+            <li>Host &mdash; Nayoung Kim</li>
+            <li class="hanging-16">
+              Nartker, M., Zhou, Z., &amp; Firestone, C. (2023). When will AI misclassify? Intuiting failures on natural images. <span class="italic">Journal of Vision</span>, <span class="italic">23</span>(4), 4.
+              <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.23.4.4" target="_blank">https://doi.org/10.1167/jov.23.4.4</a></li>
+          </ul>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">April 2, 10:30 AM</h2>
+          <ul class="mb-2 break-inside-avoid break-before-avoid">
+            <li>Host &mdash; Hyerim Kim</li>
+            <li class="hanging-16">
+              Durgin, F. H., Gonzalez, N. S., Wen, P., &amp; Huk, A. C. (2026). Texture density discrimination is more precise than number discrimination. <span class="italic">Journal of Vision</span>, <span class="italic">26</span>(2), 2.
+              <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.26.2.2" target="_blank">https://doi.org/10.1167/jov.26.2.2</a></li>
+          </ul>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">March 26, 10:30 AM</h2>
+          <ul class="mb-2 break-inside-avoid break-before-avoid">
+            <li>Host &mdash; Suyeon Kim</li>
+            <li class="hanging-16">
+              Hansmann-Roth, S., Harmening, W., &amp; Sayim, B. (2026). Compression of visual information in redundancy masking follows grouping and segmentation. <span class="italic">Cognition</span>, <span class="italic">272</span>, 106507.
+              <a class="underline-blue-600 break-words" href="https://doi.org/10.1016/j.cognition.2026.106507" target="_blank">https://doi.org/10.1016/j.cognition.2026.106507</a></li>
+          </ul>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">March 19, 10:30 AM</h2>
+          <ul class="mb-2 break-inside-avoid break-before-avoid">
+            <li>Host &mdash; Oakyoon Cha</li>
+            <li class="hanging-16">
+              Keitel, C., Keitel, A., Benwell, C. S., Daube, C., Thut, G., &amp; Gross, J. (2019). Stimulus-driven brain rhythms within the alpha band: The attentional-modulation conundrum. <span class="italic">Journal of Neuroscience</span>, <span class="italic">39</span>(16), 3119&ndash;3129.
+              <a class="underline-blue-600 break-words" href="https://doi.org/10.1523/JNEUROSCI.1633-18.2019" target="_blank">https://doi.org/10.1523/JNEUROSCI.1633-18.2019</a></li>
+          </ul>
+
+          <h2 class="font-bold break-inside-avoid break-after-avoid">March 12, 10:30 AM</h2>
+          <ul class="mb-2 break-inside-avoid break-before-avoid">
+            <li>Host &mdash; Heeho Shin</li>
+            <li class="hanging-16">
+              Coorey, J., Davidson, M., &amp; Alais, D. (2026). Mask contrast and size do not alter suppression depth in the tracking continuous flash suppression paradigm. <span class="italic">Journal of Vision</span>, <span class="italic">26</span>(1), 10.
+              <a class="underline-blue-600 break-words" href="https://doi.org/10.1167/jov.26.1.10" target="_blank">https://doi.org/10.1167/jov.26.1.10</a></li>
+          </ul>
+        </div>
+        <!-- end schedule section -->
+      </div>
+    </div>
+    <!-- end contents section -->
+  </body>
+</html>
